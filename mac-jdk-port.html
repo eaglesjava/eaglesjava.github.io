@@ -26,23 +26,14 @@
 <div id="md" style="display: none;">
 <!-- markdown -->
 ##错误如下：
-```javascript
- /Users/scott/local/tomcat/apache-tomcat-7.0.64/bin/catalina.sh run
- [2016-04-05 11:58:09,377] Artifact MVNFHM:war exploded: Server is not connected. Deploy is not available.
- Connected to server
- [2016-04-05 11:58:09,798] Artifact MVNFHM:war exploded: Artifact is being  deployed, please wait...
- 错误: 代理抛出异常错误: java.rmi.server.ExportException: Port already in use: 1099; nested exception is: 
- java.net.BindException: Address already in use
- Disconnected from server
-```
+
+ ![](http://7lryhp.com1.z0.glb.clouddn.com/1.png)
 ##在命令行输入
     sudo lsof -i :1099
 
 ##结果如下：
-```javascript
-COMMAND  PID USER FD TYPE DEVICE SIZE/OFF NODE NAME
-java  26499 scott  24u  IPv6 0xa1055320cb8c4e3  0t0  TCP *:rmiregistry (LISTEN)
-```
+
+![](http://7lryhp.com1.z0.glb.clouddn.com/2.png)
 
 ##然后根据PID杀进程：
     sudo kill -9 26499
@@ -54,14 +45,7 @@ java  26499 scott  24u  IPv6 0xa1055320cb8c4e3  0t0  TCP *:rmiregistry (LISTEN)
 <!-- content -->
 <h2 id="">错误如下：</h2>
 
-<pre><code class="javascript"> /Users/scott/local/tomcat/apache-tomcat-7.0.64/bin/catalina.sh run
- [2016-04-05 11:58:09,377] Artifact MVNFHM:war exploded: Server is not connected. Deploy is not available.
- Connected to server
- [2016-04-05 11:58:09,798] Artifact MVNFHM:war exploded: Artifact is being  deployed, please wait...
- 错误: 代理抛出异常错误: java.rmi.server.ExportException: Port already in use: 1099; nested exception is: 
- java.net.BindException: Address already in use
- Disconnected from server
-</code></pre>
+<p><img src="http://7lryhp.com1.z0.glb.clouddn.com/1.png" alt="" title=""></p>
 
 <h2 id="">在命令行输入</h2>
 
@@ -70,9 +54,7 @@ java  26499 scott  24u  IPv6 0xa1055320cb8c4e3  0t0  TCP *:rmiregistry (LISTEN)
 
 <h2 id="">结果如下：</h2>
 
-<pre><code class="javascript">COMMAND  PID USER FD TYPE DEVICE SIZE/OFF NODE NAME
-java  26499 scott  24u  IPv6 0xa1055320cb8c4e3  0t0  TCP *:rmiregistry (LISTEN)
-</code></pre>
+<p><img src="http://7lryhp.com1.z0.glb.clouddn.com/2.png" alt="" title=""></p>
 
 <h2 id="pid">然后根据PID杀进程：</h2>
 
