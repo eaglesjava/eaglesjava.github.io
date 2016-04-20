@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+.wkheader{ background-color:#f5f5f5; border-bottom:1px solid #dfdfdf; height:30px; font-size:12px; color:#666666; line-height:12px;}
+.wkheader-l{ margin-top:12px;}
+.wkheader-r a{ float:left; border-right:1px solid #ddd; background:url(../images/sanjiao.png) no-repeat 60px 2px; padding-right:22px; margin-left:22px; margin-top:12px;}
+.wkheader-r { margin-right:-1px;}
+.gg a{ position:relative;}
+.gg div{ position:absolute; top:-40px; right:-1180px; font-size:20px;}
+.wktop{ margin-top:26px; height:68px;}
+.wktop h1{ width:83px; height:54px; background:url(../../images/wk.logo.jpg) no-repeat; text-indent:-9999em;}
+.wktop-l input{ height:20px; font-size:12px; text-align:center; line-height:20px; margin-top:5px;}
+.wktop-l{ margin-left:10px;}
+.wktop-l p{ font-size:18px; margin-bottom:6px;}
+.wktop-m .text{ width:438px; height:42px; border:2px solid #2db8ad; border-right:none; padding-left:70px; outline:none;}
+#wk-toppos{ width:62px; height:100px; background-color:#fafafa; position:absolute; top:42px; left:2px; display:none;}
+#wk-toppos p{ margin-left:15px;width:100%;}
+#wk-toppos p a{ color:#666666;}
+.wktop-m .btn{ width:82px; height:46px; color:#fff; background-color:#2db8ad; margin-left:-7px; border:none;}
+.wktop-m{ position:relative; margin-left:148px; width:594px;}
+.wktop-m p a{ font-size:12px; float:left; color:#666666; margin:8px 22px 0px 0; padding-left:5px;}
+.wktop-m span{ position:absolute; display:inline-block; top:2px; left:2px; width:62px; 
+height:42px; border-right:1px solid #ccc; background-color:#fafafa; text-align:center;
+line-height:40px; font-size:14px; color:#666666;}
+.wktop-r a{ display:block; background:url(../../images/tui.png) no-repeat top; float:left; margin-right:12px; height:42px; font-size:12px; color:#ccc; padding-top:32px;}
+.wk-l{ width:200px; height:20px; background-color:#2bb8aa; color:#fff; font-size:14px; padding-left:16px; padding-top:18px;}
+.wk-m p{ font-size:14ppx; margin:0 30px; float:left;}
+.wk-m p a:hover{ background-color:#ccc;}
+.wk-m p a{ color:#000;  line-height:38px; font-weight:bold;}
+.wk-r p a{ background:url(../images/erweima.png) no-repeat; font-size:12px; padding-left:22px; line-height:18px; display:inline-block; color:#000;}
+.wkbanner-l ul{ width:212px; border:2px solid #2bb6aa;}
+.wkbanner-l li{ width:192px;border-bottom:1px solid #ccc; margin-left:10px;}
+.wkbanner-l li p{ font-size:14px; font-weight:bold; margin-top:12px;}
+.wkbanner-l li p strong{ background-color:#2bb8aa; color:#FFF; padding:3px;}
+.wkbanner-l li span a{font-size:12px; color:#666666; display:inline-block; margin-bottom:10px; margin-top:5px; }
+.wkbanner-l li span a:hover{ color:#F00;}
+.wkbanner-m{ width:764px; height:491px; border:1px solid #ccc; border-left:none; border-top:2px solid #2bb6aa;}
+.wkbanner-l-b { margin-left:15px;height:274px; display:none;}
+#show{ display:block;}
+.wkbanner-m li p{ float:left; margin:0 20px; line-height:48px; font-size:12px;}
+.wkbanner-m li p a{ color:#666666;}
+.wkbanner-m li p a:hover{ color:#f76120;}
+.wkbanner-m li{ background:url(../images/H.png) no-repeat 0 18px; width:734px; height:48px; border-bottom:1px solid #f5f5f5; margin:0 15px;}
+.wkbanner-m .jx p{ display:inline-block; background:url(../images/jx.jpg) no-repeat left; font-weight:bold; font-size:14px; line-height:18px; padding-left:18px; margin-top:16px;}
+.wkbanner-m .jx span a{ float:right; background:url(../images/yuan.png) no-repeat; width:10px; height:10px; margin:18px 2px 0 8px;}
+.wkbanner-m .jx { margin:0 15px;}
+.wkbanner-r { width:206px; height:479px; border:1px solid #ccc; border-top:2px solid #2bb6aa; margin-left:10px;}
+.wkbanner-r-t { height:37px;}
+.wkbanner-r-t p{ float:left; margin-top:10px; margin-left:10px; color:#f66022; background:url(../images/mei.png) no-repeat left; padding-left:18px;}
+.wkbanner-r-t a{ display:inline-block; margin-top:14px; float:right; margin-right:12px; color:#666666; font-size:12px;}
+.wkbanner-r-m { position:relative;border-top:1px solid #eee; border-bottom:1px dashed #ccc;}
+.wkbanner-r-m span{ position:absolute; bottom:5px; left:100px; width:10px; height:10px; display:inline-block; background:url(../images/yuan.png) no-repeat;}
+.wkbanner-r-h{ height:73px; border-bottom:1px dashed #eeeeee; font-size:12px;}
+.wkbanner-r-h p{margin-left:10px; margin-right:12px; line-height:24px; color:#000;}
+.wkbanner-r-h span{ float:right;color:#f76120;}
+.wkbanner-r-h div{ margin-top:18px;}
+
+
+
+
+
+
+
+

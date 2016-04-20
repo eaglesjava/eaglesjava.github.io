@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>3D图片轮播</title>
+<style>
+*{margin:0; padding:0; list-style:none; }
+body{background:pink; }
+#box{position:relative; margin:-10px auto; margin-left:-140px; }
+#box div{width:100px; height:40px; background:#f0f; font:20px/40px 'heiti' ;font-weight:bold; text-align:center; float:left;cursor:pointer; margin-top:5px; color:#90C;
+	border-radius:10px;
+	box-shadow:inset 0px 0px 10px #fff,
+				0px 10px 10px #000;
+	position:absolute; left:50%; top:0;
+	
+}
+#next{margin-left:120px; }
+
+#box div:hover{box-shadow:inset 0 0 20px #fff,0px 10px 10px #000;}
+#box div:active{box-shadow:inset 0px 0px 10px #fff,
+					  0px 0px 10px #000;
+			top:10px; 
+
+}
+
+#ul1{width:480px;height:260px; position:relative;background:#ccc; margin:100px auto; }
+#ul1 li{position:absolute; left:0; top:0; opacity:0;
+	transform:perspective(800px) rotateY(0deg);
+	transition:1s all ease;
+}
+#ul1 li.l2{opacity:0; z-index:1;transform:perspective(800px) translateX(-300px) rotateY(45deg);
+}
+#ul1 li.l1{opacity:1; z-index:3;
+	transform:perspective(800px) translateX(-200px) rotateY(45deg)
+}
+#ul1 li.cur{opacity:1; z-index:5; }
+#ul1 li.r1{opacity:1; z-index:3;transform:perspective(800px) translateX(300px) rotateY(-45deg)
+}
+#ul1 li.r2{opacity:0; z-index:1;transform:perspective(800px) translateX(200px) rotateY(-45deg)
+}
+
+</style>
+<script>
+window.onload=function(){
+	var oPrev=document.getElementById('prev');
+	var oNext=document.getElementById('next');
+	var oUl1=document.getElementById('ul1');
+	var aLi=oUl1.children;
+	var len=aLi.length;
+	
+	//存class
+	var aClass=[];
+	for(var i=0;i<len;i++){
+		aClass.push(aLi[i].className);
+		
+	}
+	
+	
+	var bReady=true;
+	
+	oNext.onclick=function(){
+		if(!bReady)	return;
+		bReady=false;
+		
+		aClass.unshift(aClass.pop());
+		tab();		
+	};
+	
+	
+	oPrev.onclick = function(){
+		if(!bReady) return ;
+		bReady = false;
+	 	aClass.push(aClass.shift());
+		tab();	
+	};
+	
+
+	
+	function tab(){
+		for(var i=0;i<len;i++){
+			aLi[i].className=aClass[i];
+		}
+		var oCur=oUl1.querySelector('.cur');
+		oCur.addEventListener('transitionend',function(){
+			bReady=true;
+		},false);
+	
+	}
+	
+	
+
+
+};
+
+
+
+
+
+</script>
+</head>
+
+<body onselectstart="event.returnValue=false">
+	<ul id="ul1">
+    	<li class="l2"><img src="img/1.jpg" /></li>
+    	<li class="l1"><img src="img/2.jpg" /></li>
+    	<li class="cur"><img src="img/3.jpg" /></li>
+    	<li class="r1"><img src="img/4.jpg" /></li>
+    	<li class="r2"><img src="img/5.jpg" /></li>
+    	<li><img src="img/6.jpg" /></li>
+    	<li><img src="img/7.jpg" /></li>
+    	<li><img src="img/8.jpg" /></li>
+    	<li><img src="img/9.jpg" /></li>
+    	<li><img src="img/10.jpg" /></li>
+    	<li><img src="img/11.jpg" /></li>
+    	<li><img src="img/12.jpg" /></li>
+    </ul>
+	<div id="box">
+    	<div id="prev">上一张</div>
+		<div id="next">下一张</div>
+    </div>
+</body>
+</html>

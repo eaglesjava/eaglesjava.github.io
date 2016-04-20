@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,li,span,a,b,em,i,strong,img{ padding:0;margin:0;}
+li{list-style:none;}
+a{ text-decoration:none;}
+textarea{resize:none;}
+img,select,textarea{ vertical-align:top;}
+input,select,textarea{ vertical-align:top;}
+
+.wrapper{ width:1198px; margin:0 auto;}
+.clearFix{content:""; display:block; clear:both; }
+.clearFix{zoom:1;}
+.fl{ float:left; display:bolock;}
+.fr{ float:right; display:block;}

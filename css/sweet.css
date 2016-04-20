@@ -1,0 +1,126 @@
+/* 初始化 */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article,
+aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section{margin:0; padding:0; border:none;}
+html{overflow:hidden;}
+body{font:12px '宋体',Microsoft YaHei,Tahoma,Arial,sans-serif; color:#555; background-color:#F7F7F7;
+	 -webkit-font-smoothing: antialiased;
+            font-smoothing: antialiased;
+}
+.clearfix:after{content:""; display:block; visibility:hidden; height:0; clear:both;}
+.clearfix{zoom:1;}
+a{text-decoration:none; color:#333; font-family: '宋体','Microsoft YaHei',Tahoma,Arial,sans-serif;}
+a:hover{color:#333; text-decoration:none;}
+ul,ol{list-style:none;}
+h1, h2, h3, h4, h5, h6{ font-size:100%; font-family:' Microsoft YaHei';}
+img{border: none;}
+
+/*公用样式*/
+.fl{float: left;}
+.fr{float: right;}
+.pr{position: relative;}
+.pa{position: absolute;}
+.box{position: relative;width: 100%;}
+.screenBox{position: absolute;top: 0;left:0;width: 100%;}
+.screen{overflow: hidden;}
+.screen-one{background:rgba(0,102,204,0.6); -webkit-background-size: cover;
+background-size: cover;}
+/*首屏*/
+/*导航*/
+.header{position: fixed;top: 40px;right: 45px;}
+.header li{padding:0 30px; font-size: 20px;line-height: 50px;text-align: center;}
+.header li.active a{/*background-color: #fff;*/ border-bottom:1px solid rgba(255,255,255,.6);}
+.header li a{display: block;color:rgba(255,255,255,.6);}
+.header li a:hover{ color:#fff;}
+
+
+
+/*导航*/
+.subnav{position:fixed;top:50%;right:10px;width: 50px;/*background: #ccc;*/border-radius:30px;}
+.subnav li{height:50px;text-align: center;line-height: 50px; }
+.subnav li a{display: inline-block;width: 10px;height: 10px;border-radius: 50%;border:1px solid #fff;}
+
+
+.subnav li.cur a{width: 12px;height: 12px;background:rgba(255,255,255,.8);}
+.introduce{margin: 140px auto 0;width: 100%;/*height: 400px;*/}
+.intr-img{position:absolute;right: 250px;top:0px; width: 100px;height: 100px;animation:bg 1s linear;}
+.intr-img p a{color:#fff; font-size:20px; }
+.intr-img img{width: 100%;display: block; margin-left:190px; border-radius:50%; }
+.intr-word{position:absolute;padding-top:50px;width: 600px; /*left: 23%;*/left: 50%;margin-left:-300px;top:100px;line-height: 50px;font-size: 26px;text-indent:2rem;text-align: justify; font-family: 'Microsoft YaHei'; color: #fff;animation:bg1 1s linear;}
+
+.intr-word p a{color:#fff; font-size:20px;}
+/*boom*/
+.introduce #box{width:900px; height:500px; background:url(../html/img2/slideBg.png) no-repeat; position:relative; left:260px; top:-20px; overflow:hidden; }
+.introduce #prev{background:url(../html/img2/bg.png) no-repeat;background-position:0 -42px;  width:42px;height:42px; position:absolute; left:15px; top:50%; margin-top:-22px; }
+.introduce #box a.cur{background:url(../html/img2/bg.png) no-repeat;background-position:0 0;  width:41px;height:42px; position:absolute; left:16px; top:50%; margin-top:-21px; }
+.introduce #next{background:url(../html/img2/bg.png) no-repeat;background-position:-42px -42px;  width:42px;height:42px; position:absolute; right:84px; top:50%; margin-top:-22px; }
+.introduce #box a.cur2{background:url(../html/img2/bg.png) no-repeat;background-position:-41px 0;  width:42px;height:42px; position:absolute; right:84px; top:50%; margin-top:-21px; }
+
+
+
+.introduce #box #div1{position:relative;width:700px; height:400px; background:url(img2/0.jpg)) no-repeat; background-size:cover; left:65px; top:40px; }
+.introduce #box #div1 span{ position:absolute;left:0;top:0;width:100px; height:100px; background:url(../html/img2/1.jpg) no-repeat;}
+.introduce #bottom{position:absolute; bottom:22px; right:132px; }
+.introduce #bottom a{background:url(../html/img2/bg_2.png) no-repeat; background-position:-24px 0; width:24px; height:24px; display:inline-block; }
+.introduce #bottom a.active{background:url(../html/img2/bg_2.png) no-repeat; background-position:0 0; width:24px; height:24px; display:inline-block; }
+
+
+
+
+
+
+/*第二屏*/
+.screen-two{background:rgba(0,0,0,1);-webkit-background-size: cover;background-size: cover;}
+.screen-two .introduce{animation: '';}
+.stepmove{position: relative;left: 50%;top:0;padding:10px 0 0 10px; width: 1040px;height: 380px;overflow: hidden;/*transform:translateX(-50%);*/margin-left:-520px;animation: '';}
+.stepmove li{position:relative; float: left;margin:0 10px 10px 0; width: 250px;height: 180px;line-height: 180px;font-size: 30px; text-align: center; background-color: #fff;border-radius:20px;overflow: hidden;}
+
+.stepmove li img{height: 100%;width: 100%;}
+.stepmove li a{position: absolute;left: -250px;top: 0;width: 100%;height: 100%;background:rgba(0,0,0,.6);color: #fff;border-radius:20px;}
+.pagestep{margin:20px auto;width: 50px;text-align:center; border:1px solid rgba(255,255,255,.6);transition:0.4s all linear;}
+.pagestep:hover{transform: rotate(360deg);border-radius:50%;}
+.pagestep a{display: inline-block;width: 50px;height: 50px;line-height: 50px;text-align:center;font-size: 20px;cursor:pointer;color:rgba(255,255,255,.6);}
+
+/*第三屏*/
+.screen-three{background:rgba(204,0,255,0.6);-webkit-background-size: cover;
+background-size: cover;}
+html .can{padding:30px 0 0 30px; width: 330px;height:430px;top:0; font-size: 24px;line-height: 35px;color:#fff;background: rgba(0,0,0,.7);box-sizing: border-box;box-shadow: 0 0 10px #fff;-webkit-box-shadow: 0 0 30px #fff;border-radius: 10px;}
+html .can:nth-child(1){left: 780px;}
+.can p{text-indent:2rem;font-size:20px;}
+/*第四屏*/
+.screen-four{background: rgba(153,51,0,0.6);-webkit-background-size: cover;
+background-size: cover;}
+.screen-five{background: rgba(102,51,255,0.6);-webkit-background-size: cover;
+background-size: cover;}
+.aboutme{padding-left: 30px; left:50%;top:10px;margin-left: -200px; width: 370px;height: 400px;animation:aboutme 1s linear;box-shadow: 0 0 10px #fff;-webkit-box-shadow: 0 0 30px #fff;background: rgba(0,0,0,.8);border-radius: 10px;}
+.aboutme p{/*text-align: center;*/ line-height:40px;font-size: 20px;}
+
+/*3d旋转环*/
+.rotate3D{position: absolute;margin-left:-66px;width: 133px;height: 200px;left: 50%;top:30%; 
+    transform:perspective(800px) rotateX(-15deg) rotateY(0deg);
+    transform-style:preserve-3d;
+	z-index:5;
+}
+/*.rotate3D:active{transform:perspective(800px) rotateY(360deg) rotateX(-15deg);}*/
+.rotate3D li{position: absolute;left: 0;top:0;width: 100%;height: 100%;
+    transition:1s all ease;transform:rotateY(0deg) translateZ(1px);border-radius:10px;box-shadow: 0 0 20px #fff;
+}
+
+.rotate3D li img{width:100%; height:100%; border-radius:10px; }
+
+
+/*logo*/
+.sweet{position: fixed;top: 50px;left: 100px;font-size: 30px;line-height: 50px; color: #fff;/*transition:1s all ease;*/ animation:aboutme 1s linear;}
+.sweet span{display: inline-block; width: 50px;height: 50px;text-align: center; background:#fff;border-radius: 50%;color:#000;}
+/*翻页*/
+.toggle{position: fixed;margin-left: -25px;left: 50%;bottom: 20px;width: 50px;height: 50px;cursor: pointer;}
+.toggle img{ position: absolute;left: 13px;top: 0 width: 25px;height: 25px;}
+
+/*remind*/
+#remind{ width:100%; height:100%; position:absolute; left:0; top:0; font-size:18px; }
+#shadow{width:100%; height:100%; background:#000; opacity:0.5; filter:alpha(opacity=50); position:absolute; left:0; top:0 }
+#remind_content{ width:500px; height:300px; background:#fff; border-radius:10px; position:absolute; left:50%; top:50%; margin-left:-250px; margin-top:-150px;}
+#remind_content h3{ margin-left:10px; margin-top:10px; font-size:20px;}
+#remind_content p{ margin:10px auto; width:300px; line-height:30px;}
+#remind_content a{ position:absolute; right:0; top:0; width:30px; height:30px; text-decoration:none; font-size:200%;}
+#remind_content span{ position:absolute; width:100px; height:30px; left:50%; margin-left:-50px; bottom:30px;}
+#mask{ width:100%; height:100%; background:#fff;}
