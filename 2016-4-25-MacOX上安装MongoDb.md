@@ -93,7 +93,7 @@
 
 个人觉得[Robomongo](http://www.robomongo.org/download)很不错，是跨平台的，Windows，Mac, Linux下都可以使用。
 
-![mahua](http://eaglesjava.github.io/blog-img/1.png)
+![mongo数据库展示](http://7lryhp.com1.z0.glb.clouddn.com/mongo.jpg)
 
 其实，MongoDb的用法大多数还都是编程使用，比如和nodeJs结合使用。
 
