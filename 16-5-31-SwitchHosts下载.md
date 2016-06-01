@@ -74,3 +74,35 @@ SwitchHosts! 的数据文件在 `~/.SwitchHosts` 目录下，其中 `~/.SwitchHo
 本程序完全免费，并基于 MIT 协议开源。
 
 [链接](https://github.com/oldj/SwitchHosts)
+```
+#
+# link: https://github.com/txthinking/google-hosts
+#
+# UPDATE: Tue Jun  2 09:11:39 UTC 2015
+#
+127.0.0.1    localhost
+74.125.237.0    0.docs.google.com
+74.125.237.0    0.drive.google.com
+74.125.237.0    1.docs.google.com
+74.125.237.0    1.drive.google.com
+74.125.237.0    10.docs.google.com
+74.125.237.0    10.drive.google.com
+74.125.237.0    11.docs.google.com
+74.125.237.0    11.drive.google.com
+74.125.237.0    12.docs.google.com
+74.125.237.0    12.drive.google.com
+74.125.237.0    13.docs.google.com
+74.125.237.0    13.drive.google.com
+74.125.237.0    14.docs.google.com
+74.125.237.0    14.drive.google.com
+74.125.237.0    15.docs.google.com
+74.125.237.0    15.drive.google.com
+74.125.237.0    16.docs.google.com
+74.125.237.0    16.drive.google.com
+74.125.237.0    2.docs.google.com
+74.125.237.0    2.drive.google.com
+74.125.237.0    3.docs.google.com
+74.125.237.0    3.drive.google.com
+74.125.237.0    4.docs.google.com
+74.125.237.0    4.drive.google.com
+```
