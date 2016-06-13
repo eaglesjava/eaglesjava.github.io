@@ -1,7 +1,7 @@
 
-1. 1.Facebook’s F8 Conference App
+1. Facebook’s F8 Conference App
 
- React Native最佳学习模版- F8 App开源了,界面和体验是相当的完美,这个是Facebook官方开发的,所以放在第一位进行推荐。现在在github将近6000个star了。
+React Native最佳学习模版- F8 App开源了,界面和体验是相当的完美,这个是Facebook官方开发的,所以放在第一位进行推荐。现在在github将近6000个star了。
 
  项目地址:
  ```
