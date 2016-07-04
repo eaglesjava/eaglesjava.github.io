@@ -13,3 +13,4 @@ Error: getaddrinfo ENOTFOUND localhost
 ```
 127.0.0.1  localhost
 ```
+> http://osxdaily.com/2014/04/12/restore-original-hosts-file-mac/
