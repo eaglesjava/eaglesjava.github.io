@@ -8,7 +8,7 @@ yum -y install gcc automake autoconf libtool make
 ```
 效果如下:
 
-![](img/16-5-11/1.png)
+![](../img/16-5-11/1.png)
 
 
 2. 安装g++:
@@ -17,7 +17,7 @@ yum install gcc gcc-c++
 ```
 效果如下:
 
-![](img/16-5-11/2.png)
+![](../img/16-5-11/2.png)
 
 3. 正式开始
 
@@ -46,11 +46,11 @@ make install
 ```
 
 最新的pcre如下:
-![](img/16-5-11/3.png)
+![](../img/16-5-11/3.png)
 
 wget安装pcre
 
-![](img/16-5-11/4.png)
+![](../img/16-5-11/4.png)
 
 3.3 安装zlib库
 
