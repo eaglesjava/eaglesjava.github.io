@@ -24,12 +24,7 @@ Redux DevTools
 React应用无刷新保存工具：[react-transform](https://github.com/gaearon/react-transform-boilerplate)
 
 ####不明真相的群众，可能这里需要我来安利一下Flux数据流的思想，看图：
-
-  ╔═════════╗       ╔════════╗       ╔═════════════════╗
-  ║ Actions ║──────>║ Stores ║──────>║ View Components ║
-  ╚═════════╝       ╚════════╝       ╚═════════════════╝
-       ^                                      │
-       └──────────────────────────────────────┘
+![这里写图片描述](http://img.blog.csdn.net/20160717182008217)
 
   注意：图片仅仅是FLUX思想，而不是Facebook的实现。
   
@@ -366,13 +361,13 @@ export default function configureStore(initialState) {
 
 刚接触到Redux和React技术的时候，我几乎是夜夜难以入眠的，技术革新带来的新的思想总是不断的刺激着我的大脑。非常建议你也能来试试Redux，体会我在开发中得到的这种幸福感。
 
+[源码前往此处下载](https://github.com/react-scott/react-learn/tree/master/react-redux)
+
 ###打赏
 - 支付宝
-
-![这里写图片描述](http://img.blog.csdn.net/20160717180651634)
+![这里写图片描述](http://img.blog.csdn.net/20160717205500435)
 
 - 微信
-
-![这里写图片描述](http://img.blog.csdn.net/20160717180719149)
+![这里写图片描述](http://img.blog.csdn.net/20160717205547405)
 
 文章来源，根据[@孙成瑞_Matthew - 博客](https://github.com/matthew-sun/redux-example)整理而来
